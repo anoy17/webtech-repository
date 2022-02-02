@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+fieldset {
+  background-color: gray;
+}
+
+legend {
+  background-color: black;
+  color: white;
+  padding: 10px 10px;
+}
+
+
+</style>
+	<meta charset="UTF-8">
+	<title>Registration Form</title>
+</head>
+<body>
+
+<h1>Registration Form</h1>
+	
+
+<form action="submit.html" method="POST">
+<fieldset>
+<legend>Provide Information:</legend>
+<br>
+<br>
+<label for="firstname">First name:</label>
+<input type="text" name="firstname" maxlength="20" required>
+<br>
+<br>
+<label for="lastname">Last name:</label>
+<input type="text" name="lastname" maxlength="20" required>
+<br>
+<br>
+<label for="gender">Gender:</label>
+<input type="radio" name="gender" value="Male"required> Male
+<input type="radio" name="gender" value="Female"required> Female
+<input type="radio" name="gender" value="Others"required> Others
+<br>
+<br>
+
+<label for="Dob">Date of Birth:</label>
+
+<input type="date" name="Dob">
+<br>
+<br>
+<label for="religion">Religion</label>
+
+<select name="religion" required >
+<option value="">None</option>
+<option>Islam</option>
+<option>Buddhism</option>
+<option>Hinduism</option>
+<option>Christianity</option>
+<option>Judaism</option>
+<option>Other</option>
+</select>
+</fieldset>
+<fieldset>
+<br>
+<br>
+<label for="presentaddress">Present Address:</label>
+<input type="text" name="presentaddress" maxlength="100" required>
+<br>
+<br>
+<label for="permanentaddress">Permanent Address:</label>
+<input type="text" name="permanentaddress" maxlength="100" required>
+<br>
+<br>
+<label for="phoneno">Phone Number:</label>
+<input type="text" name="phone" maxlength="11" required>
+<br>
+<br>
+<label for="email">Email:</label>
+<input type="email" name="email" maxlength="30" required>
+<br>
+<br>
+<label for="website">Website Link(URL):</label>
+<input type="link" id="link" name="link">
+<br>
+<br>
+</fieldset>
+<fieldset>
+<legend>Account Information:</legend>
+<br>
+<br>
+<label for="username">User name:</label>
+<input type="text" name="username" maxlength="30" required>
+<br>
+<br>
+<input type="submit" value="Submit" >
+<input type="reset"  value="Cancel">
+
+		</body>
+		</html>
